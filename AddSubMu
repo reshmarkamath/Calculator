@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a,b;
+	char ch;
+	printf("Enter first Number :");
+	scanf("%d",&a);
+	printf("Enter second Number :");
+	scanf("%d",&b);
+	printf("Enter operator (+, -, *, /) :");
+	scanf(" %c",&ch);
+	if(ch=='+')
+		printf("Result = %d",a+b);
+	else if(ch=='-')
+		printf("Result = %d",a-b);
+	else if(ch=='*')
+		printf("Result = %d",a*b);
+	else if(ch=='/')
+		printf("Result = %d",a/b);
+	else
+		printf("Wrong Operator!!!");
+	getch();
